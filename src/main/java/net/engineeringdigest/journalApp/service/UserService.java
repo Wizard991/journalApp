@@ -61,7 +61,6 @@ public class UserService {
     }
 
     public void saveAdmin(User user) {
-
         System.out.println("🔥 saveNewUser CALLED");
 
         user.setPassword(

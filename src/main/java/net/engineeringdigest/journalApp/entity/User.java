@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.NonNull;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
@@ -25,10 +24,13 @@ public class User {
     private ObjectId id;
 
     @Indexed(unique = true)
-    @NonNull
+
     private String userName;
 
-    @NonNull
+    private String email;
+
+    private Boolean sentimentAnalysis;
+
     private String password;
 
     @DBRef

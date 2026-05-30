@@ -5,3 +5,25 @@ spring:
       port: 27017
       database: journladb
       auto-index-creation: true
+
+    redis:
+      host: localhost
+      port: 6379
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ryashaj6268@gmail.com
+    password: amcc cuqv lepc hdux
+
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+weather:
+  api:
+    key: 79dc955dcd6e8e53b2bb7dad0209b6f21
